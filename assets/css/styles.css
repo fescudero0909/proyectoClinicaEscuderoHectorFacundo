@@ -180,6 +180,11 @@
     padding: 15px;
 }
 
+.modalidades h2{
+    text-align: center;
+    padding: 10px;
+}
+
 .tipoTerapia{
     display: flex;
     justify-content: space-around;
@@ -230,13 +235,17 @@
 }
 
 .areas{
-    display: flex;
-    flex-direction: row;
-    font-size: 18px;
+    font-size: 16px;
     padding: 10px 25px 5px 25px;
     font-style: oblique;
     margin-top: 20px;
     font-family:"Ubuntu";
+    text-align: center;
+    list-style: none;
+}
+
+.areas li{
+    padding: 5px;
 }
 
 
@@ -256,12 +265,16 @@
     align-items: center;
 }
 
+.footer h5{
+    font-size: 8px;
+}
+
 .footer div img{
     width: 40px;
     padding: 5px;
 }
 
-/*Adaptaciones del index*/
+/*Adaptaciones a distintos tamaños*/
 @media(min-width: 768px){
     .container{
         grid-template-rows: 130px 350px auto auto 100px;
@@ -287,6 +300,12 @@
         text-align: right;
         padding: 250px 10px;
         color: white;
+    }
+
+    .imgGym{
+        background-size: 100%;
+        background-repeat: none;
+        height: 400px;
     }
     .cajaInicio1{
         flex-direction: row;
@@ -327,10 +346,10 @@
         padding: 10px;
     }
     .footer h5{
-        font-size: 12px;
+        font-size: 10px;
     }
     .footer div  img{
-        width: 50px;
+        width: 45px;
     }    
 }
 
@@ -348,6 +367,13 @@
     .imgIndex p{
         padding: 300px 10px;
     }
+    .objetivo{
+        font-size: 14px;
+    }
+    .vision{
+        font-size: 14px;
+    }
+    
 }
 
 @media(min-width: 1200px){
@@ -362,6 +388,10 @@
     }
     .imgIndex p{
         padding: 450px 10px 0px;
+    }
+
+    .imgGym{
+        height: 550px;
     }
     .cajaInicio1 img{
         width: 200px;
@@ -381,10 +411,13 @@
     .cajaInicio2 div p{
         padding: 0px 60px 20px;
     }
+    .objetivo{
+        padding:15px 50px 15px 50px ;
+    }
     .footer h5{
-        font-size: 18px;
+        font-size: 13px;
     }
     .footer div  img{
-        width: 60px;
+        width: 50px;
     }    
 }
