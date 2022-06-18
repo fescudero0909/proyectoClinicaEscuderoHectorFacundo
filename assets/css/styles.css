@@ -72,20 +72,25 @@
 
 /*header rehabilitacion*/
 .imgGym{
-    background-image: url(../img/gym1.jpg);
+    background-image: url("../img/gym1.jpg");
     height: 200px;
-    background-size: cover;
+    background-size:cover;
     background-repeat: none;
 }
 
 /*header equipo prof*/
 .imgEquipo{
-    background-image: url(../img/terapia/equipoProf.jpg);
-    height: 200px;
+    background-image: url("../img/terapia/terapia.jpg");
+    height: 250px;
     background-size: cover;
-    background-repeat: none;
+    background-repeat:no-repeat;
 }
-
+.imgEquipo h2{
+    font-size: 35px;
+    font-family:"Ubuntu";
+    padding: 20px;
+    
+}
 
 /*Main*/
 .main{
@@ -217,14 +222,14 @@
 .terapistas{
     display: flex;
     justify-content: space-around;
-    margin-left:100px;
-    margin-right: 100px;
+    margin: 80px 40px 20px 40px;
     padding-bottom: 20px;
 }
 .profesional{
     display: flex;
     align-items:flex-start;
-    font-size: 12px;
+    font-size: 11px;
+    font-family:"Ubuntu";
 }
 .profesional img{
     width: 50px;
@@ -347,6 +352,12 @@
         background-repeat: none;
         height: 400px;
     }
+    .imgEquipo{
+        background-size: 100%;
+        background-repeat: none;
+        height: 400px;
+    }
+
     .cajaInicio1{
         flex-direction: row;
         background-color: #d5d2d2;
@@ -380,6 +391,12 @@
     .entrevistas h2{
         font-size: 30px;
     }
+    .terapistas{
+        margin: 80px 20px 20px 20px;
+    }
+    .profesional{
+        font-size: 15px;
+    }
     .footer{
         flex-direction: row;
         justify-content: space-between;
@@ -407,13 +424,35 @@
     .imgIndex p{
         padding: 300px 10px;
     }
+    .imgEquipo{
+        height: 550px;
+    }    
+    
     .objetivo{
         font-size: 14px;
     }
     .vision{
         font-size: 14px;
     }
-    
+    .terapistas{
+        margin: 230px 50px 20px 50px;
+    }
+    .profesional{
+        font-size: 24px;
+    }
+    .profesional img{
+        width: 70px;
+    }
+    .galeria{
+        font-size: 36px;
+    }
+    .fotosGaleria{
+        justify-content:space-evenly;
+        margin: 10px;
+    }
+    .foto{
+        width: 200px;
+    }
 }
 
 @media(min-width: 1200px){
@@ -429,9 +468,14 @@
     .imgIndex p{
         padding: 450px 10px 0px;
     }
-
     .imgGym{
         height: 550px;
+    }
+    .imgEquipo{
+        height: 620px;
+    }
+    .imgEquipo h2{
+        font-size: 50px;
     }
     .cajaInicio1 img{
         width: 200px;
@@ -454,6 +498,16 @@
     .objetivo{
         padding:15px 50px 15px 50px ;
     }
+    .terapistas{
+        margin: 110px 20px 20px 20px;
+    }
+    .profesional{
+        font-size: 25px;
+    }
+    .profesional img{
+        width: 65px;
+    }
+
     .footer h5{
         font-size: 13px;
     }
