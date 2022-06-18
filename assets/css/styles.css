@@ -28,6 +28,17 @@
                          "footer1 footer1 footer1 footer1";
 }
 
+.containerContacto{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 130px 100px auto auto 100px;
+    grid-template-areas: "navbar2 navbar2 navbar2 navbar2"
+                         "header2 header2 header2 header2"
+                         "main2   main2   main2   main2"
+                         "aside2  aside2  aside2  aside2"
+                         "footer2 footer2 footer2 footer2";
+}
+
 
 /*Navegador para todas las páginas menos capacitacion*/
 .navbar{
@@ -85,13 +96,39 @@
     font-family:"Ubuntu";
 }
 
+/*Navegador ubicacion*/
+.navbar2{
+    grid-area: navbar2;
+    background-color:rgb(0, 102, 51);
+    align-items: center;
+    text-align: center;
+}
+
+.logobar img{
+    width: 250px;
+}
+
+.navbar2 ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.navbar2 ul li{
+    padding: 3px;
+    align-items: center;
+}
+
+.navbar2 ul li a{
+    text-decoration: none;
+    font-size: 11.5px;
+    color: white;
+    font-family:"Ubuntu";
+}
 
 /*header*/
 .header{
     grid-area: header;
-}
-.header1{
-    grid-area: header1;
 }
 
 /*header index*/
@@ -131,7 +168,22 @@
 }
 
 /*header capacitacion*/
+.header1{
+    grid-area: header1;
+}
 .header1 h2{
+    font-size: 35px;
+    font-family:"Ubuntu";
+    padding: 20px;
+    background-color: #d5d2d2;
+    text-align: center;
+}
+
+/*header contactos*/
+.header2{
+    grid-area: header2;
+}
+.header2 h2{
     font-size: 35px;
     font-family:"Ubuntu";
     padding: 20px;
@@ -142,11 +194,6 @@
 /*Main*/
 .main{
     grid-area: main;
-}
-.main1{
-    grid-area: main1;
-    display: flex;
-    flex-direction: column;
 }
 
 /*Main index*/
@@ -288,6 +335,11 @@
 }
 
 /*main capacitacion*/
+.main1{
+    grid-area: main1;
+    display: flex;
+    flex-direction: column;
+}
 .cursoPsico img{
     width:  400px;
     padding: 0px 10px 0px 30px;
@@ -353,6 +405,21 @@
     font-family:"Ubuntu";
 }
 
+/*Main contactos*/
+.main2{
+    grid-area: main2;
+}
+
+.main2 h2{
+    font-size: 12px;
+    font-family:"Ubuntu";
+    margin-left: 23px;
+}
+
+.main2 div{
+    text-align: center;
+    padding: 20px;
+}
 
 /*aside*/
 .aside{
@@ -413,6 +480,45 @@
     width: 100px;
 }
 
+/*aside contacto*/
+.aside2{
+    grid-area: aside2;
+}
+.mediosContacto{
+    display: flex;
+    flex-direction: column;
+}
+.mediosContacto div{
+    font-size: 12px;
+    text-align: center;
+    font-family:"Ubuntu";
+    padding: 10px;
+}
+.mediosContacto div img{
+    width: 45px;
+}
+
+.form{
+    text-align: center;
+    background-color: #d5d2d2;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5%;
+    font-family:"Ubuntu";
+}
+.form h2{
+    padding-bottom: 10px;
+}
+.form div{
+    padding: 5px;
+}
+.cuadroTexto{
+    border-radius: 5%;
+    font-size: 13.5px;
+    padding: 10px;
+    margin: 5px;
+}
+
 /*footer igual en cada página*/
 .footer{
     grid-area: footer;
@@ -438,6 +544,7 @@
     padding: 5px;
 }
 
+/*footer FCM*/
 .footer1{
     grid-area: footer1;
     background-color: rgb(171, 1, 50);
@@ -458,6 +565,31 @@
 }
 
 .footer1 div img{
+    width: 40px;
+    padding: 5px;
+}
+
+/*Footer Ubicacion*/
+.footer2{
+    grid-area: footer2;
+    background-color:rgb(0, 102, 51);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    font-family:"Ubuntu";
+}
+
+.footer2 div{
+    display: flex;
+    align-items: center;
+}
+
+.footer2 h5{
+    font-size: 8px;
+}
+
+.footer2 div img{
     width: 40px;
     padding: 5px;
 }
@@ -483,6 +615,14 @@
         justify-content: space-between;
     }
     .navbar1 ul li a{
+        padding-right: 10px;
+        font-size: 12px;
+    }
+    .navbar2{
+        display: flex;
+        justify-content: space-between;
+    }
+    .navbar2 ul li a{
         padding-right: 10px;
         font-size: 12px;
     }
@@ -555,6 +695,21 @@
     .profesional{
         font-size: 15px;
     }
+    .main2 h2{
+        font-size: 18px;
+        margin-left: 23px;
+    }
+    .main2 div iframe{
+        width: 100%;
+        height: 350px
+    }
+    .aside2{
+        display: flex;
+    }
+    .mediosContacto{
+        padding-top: 40px;
+    }
+
     .footer{
         flex-direction: row;
         justify-content: space-between;
@@ -576,7 +731,18 @@
     }
     .footer1 div  img{
         width: 45px;
-    }        
+    }
+    .footer2{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    .footer2 h5{
+        font-size: 10px;
+    }
+    .footer2 div  img{
+        width: 45px;
+    }                
 }
 
 @media(min-width: 992px){
@@ -587,6 +753,9 @@
         font-size: 17px;
     }
     .navbar1 ul li a{
+        font-size: 17px;
+    }
+    .navbar2 ul li a{
         font-size: 17px;
     }
     .imgIndex{
@@ -631,6 +800,13 @@
     .foto{
         width: 200px;
     }
+    .aside2{
+        justify-content: space-between;
+        padding: 25px;
+    }
+    .mediosContacto div{
+        font-size: 20px;
+    }
 }
 
 @media(min-width: 1200px){
@@ -644,6 +820,9 @@
         font-size: 20px;
     }
     .navbar1 ul li a{
+        font-size: 20px;
+    }
+    .navbar2 ul li a{
         font-size: 20px;
     }
     .imgIndex p{
@@ -695,9 +874,31 @@
     .main1 div img{
         width: 350px;
     }
+    .mediosContacto div{
+        font-size: 25px;
+    }
+    .form{
+        width: 600px;
+    }
+    .form h2{
+        font-size: 36px;
+    }
+    .form div{
+        padding: 10px;
+        font-size: 30px;
+    }
+    .cuadroTexto{
+        font-size: 25px;
+        padding: 10px;
+        margin: 5px;
+    }
+    .btn{
+        font-size: 28px;
+    }
     .btnFundi{
         font-size: 18px;
     }
+    
     .footer h5{
         font-size: 13px;
     }
@@ -709,5 +910,11 @@
     }
     .footer1 div  img{
         width: 50px;
-    }        
+    }
+    .footer2 h5{
+        font-size: 13px;
+    }
+    .footer2 div  img{
+        width: 50px;
+    }                
 }

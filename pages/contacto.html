@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="../assets/css/styles.css">
     <title>Contacto</title>
 </head>
-<body>
-    <nav class="navbar">
+<body class="containerContacto">
+    <nav class="navbar2">
         
         <div class="logobar">
-            <img src="../assets/img/Logo1ColorCGris.png" alt="">
+            <a href="../index.html"><img src="../assets/img/logoBlancoCCM.png" alt=""></a>
         </div>
 
         <ul>
@@ -25,22 +25,82 @@
 
     </nav>
 
-    <header class="header">
-
+    <header class="header2">
+        <h2>Contactate con nosotros</h2>
     </header>
 
-    <main class="main">
-
+    <main class="main2">
+        
+        <h2>Sede central</h2>
+        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3408.3092684071694!2d-64.30856268523726!3d-31.322830981435384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94329db9c0ac9445%3A0x7974801b39519b7d!2sClinica%20Castillo%20Morales!5e0!3m2!1ses!2sar!4v1653484251141!5m2!1ses!2sar" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
 
     </main>
 
-    <aside class="aside">
+    <aside class="aside2">
+        <div class="mediosContacto">
+            <div>
+                <img src="../assets/img/simbolos/ubicacion.png  " alt="">
+                <h4>Av. Ricardo Rojas 10.500 - Saldán - Córdoba - Argentina</h4>
+            </div>
+            <div>
+                <img src="../assets/img/simbolos/horario.png" alt="">
+                <h4>Lun a Vie de 08:00 hs. a 18:00 hs.</h4>
+            </div>
+            <div>
+                <img src="../assets/img/simbolos/telefono.png" alt="">
+                <h4>(0351) 5890066</h4>
+            </div>
+            <div>
+                <img src="../assets/img/simbolos/whatsapp.png" alt="">
+                <h4>351 6869392 </h4>
+            </div>
+            <div>
+                <img src="../assets/img/simbolos/mail.png" alt="">
+                <h4>info@castillomorales.com.ar</h4>
+            </div>
+            <div>
+                <img src="../assets/img/simbolos/web.png" alt="">
+                <h4>www.castillomorales.com.ar</h4>
+            </div>
+        </div>  
 
+        <form class="form" action="">
+            <h2>Dejanos tu consulta</h2>
+            <div class="datos">
+                <div class="datosPersonales">
+                    <input class="cuadroTexto" type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" required>
+                    <input class="cuadroTexto" type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido" required>
+                </div>                    
+                <div class="datosPersonales">
+                    <input class="cuadroTexto" type="email" name="mail" id="mail" placeholder="Ingrese su e-mail" required>
+                    <input class="cuadroTexto" type="number" name="dni" id="dni" placeholder="Ingrese su DNI" required>
+                </div>    
+                <div>
+                    <input type="radio" name="sexo" id="sexo" value="h">
+                    <label for="sexo">Hombre</label>
+                    <input type="radio" name="sexo" id="sexo" value="m">
+                    <label for="sexo">Mujer</label>
+                </div>
+                <textarea class="cuadroTexto" name="comentario" id="comentario" cols="30" rows="10" placeholder="Ingrese su comentario"></textarea>
+                <div>
+                    <label for="acepto">Acepto términos y condiciones</label>
+                    <input type="checkbox" name="acepto" id="tyc" value="si" required>
+                </div>
+                <input class="btn" type="submit" value="Enviar">
+            </div>
+        </form>
 
     </aside>
 
-    <footer class="footer">        
-        
+    <footer class="footer2">        
+        <h5>©2022 Castillo Morales. Todos los derechos reservados</h5>
+        <div>
+            <img src="../assets/img/redes/iconoFace.png" alt="">
+            <img src="../assets/img/redes/iconoIG.png" alt="">
+            <img src="../assets/img/redes/iconoTwitter.png" alt="">
+        </div>
     </footer>
     
 </body>
