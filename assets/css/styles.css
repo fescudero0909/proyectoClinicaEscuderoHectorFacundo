@@ -18,8 +18,18 @@
                          "footer footer footer footer footer";
 }
 
+.containerFCM{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 130px 100px auto 100px;
+    grid-template-areas: "navbar1 navbar1 navbar1 navbar1"
+                         "header1 header1 header1 header1"
+                         "main1   main1   main1   main1"
+                         "footer1 footer1 footer1 footer1";
+}
 
-/*Navegador para todas las páginas*/
+
+/*Navegador para todas las páginas menos capacitacion*/
 .navbar{
     grid-area: navbar;
     background-color:rgb(0, 102, 51);
@@ -49,10 +59,39 @@
     font-family:"Ubuntu";
 }
 
+/*Navegador Fundacion*/
+.navbar1{
+    grid-area: navbar1;
+    background-color:rgb(171, 1, 50);
+    align-items: center;
+    text-align: center;
+}
+
+.navbar1 ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.navbar1 ul li{
+    padding: 3px;
+    align-items: center;
+}
+
+.navbar1 ul li a{
+    text-decoration: none;
+    font-size: 11.5px;
+    color: white;
+    font-family:"Ubuntu";
+}
+
 
 /*header*/
 .header{
     grid-area: header;
+}
+.header1{
+    grid-area: header1;
 }
 
 /*header index*/
@@ -89,12 +128,25 @@
     font-size: 35px;
     font-family:"Ubuntu";
     padding: 20px;
-    
+}
+
+/*header capacitacion*/
+.header1 h2{
+    font-size: 35px;
+    font-family:"Ubuntu";
+    padding: 20px;
+    background-color: #d5d2d2;
+    text-align: center;
 }
 
 /*Main*/
 .main{
     grid-area: main;
+}
+.main1{
+    grid-area: main1;
+    display: flex;
+    flex-direction: column;
 }
 
 /*Main index*/
@@ -235,6 +287,73 @@
     width: 50px;
 }
 
+/*main capacitacion*/
+.cursoPsico img{
+    width:  400px;
+    padding: 0px 10px 0px 30px;
+    margin-left: 10px;
+}
+
+.cursoPsico div{
+    text-align: center;
+    margin-bottom: 20px;
+    font-family:"Ubuntu";
+}
+
+.cursoMarcha img{
+    width:  400px;
+    padding: 0px 10px 0px 30px;
+    margin-left: 10px;
+}
+
+.cursoMarcha div{
+    text-align: center;
+    margin-bottom: 20px;
+    font-family:"Ubuntu";
+}
+
+.cursoRCM img{
+    width:  400px;
+    padding: 0px 10px 0px 30px;
+    margin-left: 10px;
+}
+.cursoRCM div{
+    text-align: center;
+    margin-bottom: 20px;
+    font-family:"Ubuntu";
+}
+.residenciaFono img{
+    width:  400px;
+    padding: 0px 10px 0px 30px;
+    margin-left: 10px;
+}
+.residenciaFono div{
+    text-align: center;
+    margin-bottom: 20px;
+    font-family:"Ubuntu";
+}
+.residenciaKine img{
+    width:  400px;
+    padding: 0px 10px 0px 30px;
+    margin-left: 10px;
+}
+.residenciaKine div{
+    text-align: center;
+    margin-bottom: 20px;
+    font-family:"Ubuntu";
+}
+
+.btnFundi{
+    width: 100px;
+    background-color: rgb(171, 1, 50);
+    color: white;
+    padding: 5px 10px;
+    margin: 10px;
+    border-radius: 5%;
+    font-family:"Ubuntu";
+}
+
+
 /*aside*/
 .aside{
     grid-area: aside;
@@ -319,6 +438,30 @@
     padding: 5px;
 }
 
+.footer1{
+    grid-area: footer1;
+    background-color: rgb(171, 1, 50);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    font-family:"Ubuntu";
+}
+
+.footer1 div{
+    display: flex;
+    align-items: center;
+}
+
+.footer1 h5{
+    font-size: 8px;
+}
+
+.footer1 div img{
+    width: 40px;
+    padding: 5px;
+}
+
 /*Adaptaciones a distintos tamaños*/
 @media(min-width: 768px){
     .container{
@@ -332,6 +475,14 @@
         width: 265px;
     }
     .navbar ul li a{
+        padding-right: 10px;
+        font-size: 12px;
+    }
+    .navbar1{
+        display: flex;
+        justify-content: space-between;
+    }
+    .navbar1 ul li a{
         padding-right: 10px;
         font-size: 12px;
     }
@@ -357,7 +508,7 @@
         background-repeat: none;
         height: 400px;
     }
-
+    
     .cajaInicio1{
         flex-direction: row;
         background-color: #d5d2d2;
@@ -384,6 +535,13 @@
         font-size: 22px;
         padding: 10px 35px 20px 10px;
     }
+    .main1{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .main1 div img{
+        width: 350px;
+    }
     .frase{
         padding: 10px 45px;
         margin: 15px 0px;
@@ -407,7 +565,18 @@
     }
     .footer div  img{
         width: 45px;
-    }    
+    }
+    .footer1{
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 10px;
+    }
+    .footer1 h5{
+        font-size: 10px;
+    }
+    .footer1 div  img{
+        width: 45px;
+    }        
 }
 
 @media(min-width: 992px){
@@ -415,6 +584,9 @@
         width: 280px;
     }
     .navbar ul li a{
+        font-size: 17px;
+    }
+    .navbar1 ul li a{
         font-size: 17px;
     }
     .imgIndex{
@@ -427,7 +599,13 @@
     .imgEquipo{
         height: 550px;
     }    
-    
+    .main1{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .main1 div img{
+        width: 300px;
+    }
     .objetivo{
         font-size: 14px;
     }
@@ -463,6 +641,9 @@
         width: 390px;
     }
     .navbar ul li a{
+        font-size: 20px;
+    }
+    .navbar1 ul li a{
         font-size: 20px;
     }
     .imgIndex p{
@@ -507,11 +688,26 @@
     .profesional img{
         width: 65px;
     }
-
+    .main1{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .main1 div img{
+        width: 350px;
+    }
+    .btnFundi{
+        font-size: 18px;
+    }
     .footer h5{
         font-size: 13px;
     }
     .footer div  img{
         width: 50px;
-    }    
+    }
+    .footer1 h5{
+        font-size: 13px;
+    }
+    .footer1 div  img{
+        width: 50px;
+    }        
 }
