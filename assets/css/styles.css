@@ -695,6 +695,9 @@
     .profesional{
         font-size: 15px;
     }
+    .foto{
+        width: 200px;
+    }
     .main2 h2{
         font-size: 18px;
         margin-left: 23px;
@@ -798,7 +801,7 @@
         margin: 10px;
     }
     .foto{
-        width: 200px;
+        width: 250px;
     }
     .aside2{
         justify-content: space-between;
@@ -866,6 +869,9 @@
     }
     .profesional img{
         width: 65px;
+    }
+    .foto{
+        width: 350px;
     }
     .main1{
         flex-direction: row;
