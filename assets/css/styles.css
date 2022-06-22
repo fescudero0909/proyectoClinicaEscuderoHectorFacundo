@@ -50,6 +50,8 @@
 
 .logobar img{
     width: 250px;
+    animation-name: aparecer;
+    animation-duration: 2s;
 }
 
 .navbar ul{
@@ -478,6 +480,10 @@
 }
 .foto{
     width: 100px;
+    transition: all 1s;
+}
+.foto:hover{
+    transform: translate(30px,-50px) scale(1.5) ;
 }
 
 /*aside contacto*/
@@ -921,4 +927,12 @@
     .footer2 div  img{
         width: 50px;
     }                
+}
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
