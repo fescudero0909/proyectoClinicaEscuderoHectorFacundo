@@ -50,6 +50,8 @@
 
 .logobar img{
     width: 250px;
+    animation-name: aparecer;
+    animation-duration: 2s;
 }
 
 .navbar ul{
@@ -919,4 +921,12 @@
     .footer2 div  img{
         width: 50px;
     }                
+}
+@keyframes aparecer{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
